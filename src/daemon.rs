@@ -450,11 +450,11 @@ mod test_daemon {
     use bitcoin::constants::genesis_block;
     use bitcoin::hashes::Hash;
     use bitcoin::{BlockHash, CompactTarget, MerkleBlock, Txid};
+    use deeps_rsv::SGXResponseV2;
     use rand::Rng;
     use reqwest::blocking::Client;
     use serde::{Deserialize, Serialize};
     use serde_json::json;
-    use deeps_rsv::SGXResponseV2;
     use std::net::SocketAddr;
     use std::str::FromStr;
     use std::thread::sleep;

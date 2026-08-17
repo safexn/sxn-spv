@@ -8,9 +8,9 @@ use crate::server::AppState;
 use crate::types::MerkleProofParam;
 use crate::types::MerkleProofParamChain;
 use bitcoin::Txid;
-use serde::{Deserialize, Serialize};
 use deeps_rsv::create_sgx_response_v2;
 use deeps_rsv::KeyType;
+use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize)]
 struct Response {

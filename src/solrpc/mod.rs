@@ -89,10 +89,7 @@ pub async fn sol(State(state): State<AppState>, Json(payload): Json<SOLReq>) -> 
     let resp = handle_request(&sol_client, req, response_cache).await;
     let resp = convert(vec![resp]);
 
-    deeps_rsv::create_sgx_response_v2(
-        resp[0].clone(),
-        deeps_rsv::KeyType::SGX,
-    )
+    deeps_rsv::create_sgx_response_v2(resp[0].clone(), deeps_rsv::KeyType::SGX)
 }
 
 async fn handle_request(

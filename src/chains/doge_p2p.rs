@@ -1,10 +1,10 @@
 use nakamoto::client::network::Network;
 use nakamoto::client::{Client, Config, Error, Handle};
 use nakamoto::net::poll::Waker;
+use std::process::exit;
 use std::str::FromStr;
 use std::sync::Arc;
 use std::{net, thread};
-use std::process::exit;
 
 type Reactor = nakamoto::net::poll::Reactor<net::TcpStream>;
 

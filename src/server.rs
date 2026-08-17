@@ -12,9 +12,9 @@ use crate::{
     config::{Config, Service},
     types::Network,
 };
+use deeps_rsv::{create_sgx_response_v2, KeyType};
 use nakamoto::client::traits::Handle;
 use serde::Serialize;
-use deeps_rsv::{create_sgx_response_v2, KeyType};
 
 #[derive(Clone)]
 pub struct NetworkType {
